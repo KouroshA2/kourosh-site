@@ -1,0 +1,16 @@
+/* 404 — an empty box: the page has margin, border and padding, but no content */
+.nf{min-height:calc(100vh - 71px);display:grid;place-items:center;padding-block:56px;text-align:center}
+.nf-in{display:grid;justify-items:center;width:min(640px,100%)}
+.nf-l{position:relative;border-radius:12px;animation:bmin .9s var(--ease) backwards;transition:background-color .35s}
+.nf-m{padding:30px;background:rgba(var(--m-rgb),.16);border:1.5px dashed rgba(var(--m-rgb),.75);animation-delay:.1s}
+.nf-b{padding:26px;background:rgba(var(--b-rgb),.18);border:2px solid rgba(var(--b-rgb),.85);animation-delay:.3s}
+.nf-p{padding:26px;background:rgba(var(--p-rgb),.17);border:1.5px dashed rgba(var(--p-rgb),.75);animation-delay:.5s}
+.nf-c{padding:14px 34px 6px;background:rgba(var(--c-rgb),.24);border:2px solid rgba(var(--c-rgb),.85);animation-delay:.7s}
+.nf-l:hover{filter:brightness(1.15)}
+.nf-code{font:800 clamp(86px,22vw,168px)/1.1 var(--fd);letter-spacing:-.04em;direction:ltr}
+.nf-tag{display:inline-block;direction:ltr;margin-top:26px;font:500 12.5px/1 'JetBrains Mono',ui-monospace,monospace;background:var(--c);color:var(--on);padding:6px 10px;border-radius:5px}
+.nf-in h1{font-size:clamp(26px,4.4vw,40px);margin:26px 0 8px}
+.nf-in .lead{margin-inline:auto;font-size:16px;max-width:470px}
+.nf-en{direction:ltr;unicode-bidi:isolate;margin-top:4px;font-size:14px;color:var(--mu)}
+.nf-in .btns{justify-content:center}
+@media(max-width:520px){.nf-m,.nf-b,.nf-p{padding:16px}.nf-c{padding:8px 18px 2px}.nf-in .btns .btn{flex:1 1 100%;justify-content:center}}
